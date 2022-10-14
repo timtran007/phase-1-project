@@ -1,0 +1,37 @@
+An app called On Recall
+
+The premise of this app is to find out whether there are things in your position that are on recall. 
+
+I will be utilizing the following API:
+https://api.fda.gov/food/enforcement.json?limit=100
+With over 100 objects and plenty of attributes
+
+3 Event Listeners
+DOMContentLoaded to load in the top 10 most recent items in the US on recall
+
+Leveraging the submit event listener on a form that filters by the states and/or cities
+
+I want to create a highlight effect if you see the item and click it
+
+
+User Story #1
+
+As a user once I get to the application, I would like to see any 5 ongoing recalls.
+
+Will need to add an event listener for DOMContentLoaded 
+
+that will fetch the data and report back if the "status" is Ongoing and limited to 5.
+
+
+User Story #2
+
+As a user I want to be able to search my city and/or my state to find all ongoing recalls.
+
+
+User Story #3
+As a user I want to be able to highlight items I think I might have in my household.
+
+
+
+
+
