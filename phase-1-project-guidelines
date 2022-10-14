@@ -1,0 +1,166 @@
+PHASE 1 PROJECT GUIDELINES
+Learning Goals ->
+- Design and architect features across a frontend
+- Communicate and collaborate in a technical environment
+- Integrate JavaScript and an external API
+- Debug issues in samll - to - medium - sized projects
+- Build and iterate on a project MVP
+
+
+Project -> 
+
+Build a Single Page Application. 
+
+Make it communicate with a public API
+
+Project Requirements -> 
+1. app must be a HTML/CSS/JS fronend that accesses data from public API or from a db.json file using json-server
+
+API or db.json should return a collection of at least 5 objects with each object having at least 3 attributes
+
+All interactions between the client and the API should be handled asynchornously and use JSON as the communication format.
+
+Avoid APIs with a key... 
+Use list to find no authroization APIs... 
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+
+2. App must run on a single page... no redirects or reloads... only a single HTML file
+
+3. At least 3 distinct event listeners (3 events of different types) that enable interactivity
+
+Each event listeners should also have its own unique callback functioin
+
+must be added using .addEventListener() method
+
+4.Project must implement at least one instance of array iteration using available array methods (map, forEach, filter, etc) manipulating API data in some way should present an opportunity to implement array iteration
+
+5. Follow good coding practices. Keep code DRY (Do not repeat yourself) by utilizing functions to abstract repetitive code.
+
+
+Strategy, Timeline and Tips
+
+Planning -> 
+plan out features
+- develop user stories
+	'as [a user], I want [to perform this action] so that [I can accomplish this goal]
+	features should should not need you there to explain them to users
+- Plan out the structor of JSON requests
+
+Project Pitches->
+- Pitch project idea to instructor for approval and feedback
+
+Before you start working on your project, you'll pitch your project idea to your instructors for approval and feedback.
+
+for the project pitch, you should include
+- basic story of application
+- the core features of MVP
+- the api data you'll be using and how you'll use it
+- challenges you expect to face
+- how you are meeting the requirements of the project
+
+MVP ASAP -> 
+- Buiild a Minimum Viable Product (MVP) as quickly as possible.
+	- pick an API and explore it early on to ensure it will work for your need
+
+Instructor Guidance
+You should strive to solve problems independently, but you shouldn't waste time stuck on a problem.. A good guideline for a small bug is the rule of 10s:
+	- 10 minutes debugging the code
+	-10 minutes using Google and stackoverflow to try and find an answer
+	- 10 minutes asking fellow students for help
+	- asking an instructor
+
+
+Guidelines for Staying Organized
+- Write down the decisions you make about project
+
+- Write everything down
+
+	- describe/sketch ideas (use diagrams)
+	- start by creating a frontend director with the basic files you'll need
+	- next build enough code to get some API data to work with. Don't worry about building all of your async code yet, just get to the point where you can access one endpoint on an API, then start working on getting that data displayed
+
+	- Then, continue to build additional async code and front end features
+	- Continue building features one by one
+
+Check in with instructors to make sure scope and timeline are manageable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
