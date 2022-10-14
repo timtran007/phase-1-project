@@ -33,5 +33,23 @@ As a user I want to be able to highlight items I think I might have in my househ
 
 
 
+Using the JSON request -> 
+
+filter by "status": "Ongoing"
+
+
+Data to showcase on page:
+"recall_initiation_date" = date of recall
+"city" = city
+"state" = state
+"product_type" = Type of Product
+"product_description" = Product Description
+"product_quantity" = Quantity
+"code_info" = Lot Codes and Expiration dates
+
+
+
+
+
 
 
