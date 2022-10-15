@@ -14,9 +14,10 @@ function fetchOngoingRecall(){
 function loadOngoingRecall(products){
     let unorderedListLocation = document.querySelector('#recall-list')
     let headerOfLoadedContent = document.createElement('div')
-    headerOfLoadedContent.id = "loaded-product-header"
-    headerOfLoadedContent.textContent = "Ongoing Products On Recall"
-    unorderedListLocation.appendChild(headerOfLoadedContent)
+    headerOfLoadedContent.innerHTML = `
+    <h2 id="loaded-product-header">Ongoing Products On Recall</h2>
+    `
+    unorderedListLocation.append(headerOfLoadedContent)
     products.results.forEach(product => {
         if (product.status === "Ongoing" && product.country ==="United States"){
             let recalledProduct = document.createElement('li')
@@ -31,8 +32,7 @@ function loadOngoingRecall(products){
                 <p> Quantities Affected: ${product.product_quantity}</p>
                 <p> Lot Codes & Exp Date: ${product.code_info}</p>
             `
-            
-            headerOfLoadedContent.appendChild(recalledProduct)
+            unorderedListLocation.append(recalledProduct)
         }
     })
 }
