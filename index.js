@@ -61,16 +61,21 @@ function fetchOngoingRecallForSearch(state){
     .then(data => {
         console.log(data)
         removeAllChildNodes(document.querySelector('#recall-list'))
+        loadHeader(state)
         loadSearch(data, state)    
     })
 }
 
-function loadSearch(products, state){
+function loadHeader(state){
     let headerOfLoadedContent = document.createElement('div')
     headerOfLoadedContent.innerHTML = `
     <h2 id="loaded-product-header">${state}'s Products On Recall</h2>
     `
     unorderedListLocation.append(headerOfLoadedContent)
+}
+
+function loadSearch(products, state){
+    
     products.results.forEach(product => {
         if(product.state === state && product.status ==="Ongoing"){
                 console.log(product.state)
