@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', (e) => {
     fetchOngoingRecall()
 })
 
+
+const form = document.querySelector('form')
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let searchedCity = document.querySelector('#search-city').value
+    let selectedState = document.querySelector('#state-dropdown').value 
+    populateSearch(searchedCity, selectedState)
+}
+)
+
 function fetchOngoingRecall(){
     fetch ('https://api.fda.gov/food/enforcement.json?limit=1000')
     .then(resp => resp.json())
@@ -22,7 +32,6 @@ function loadOngoingRecall(products){
         if (product.status === "Ongoing" && product.country ==="United States"){
             let recalledProduct = document.createElement('li')
             recalledProduct.className = 'card'
-            console.log(recalledProduct)
             recalledProduct.innerHTML = `
                 <h3>Product Description: ${product.product_description}</h3>
                 <h4>Date of Recall: ${product.recall_initiation_date} </h4>
@@ -34,5 +43,19 @@ function loadOngoingRecall(products){
             `
             unorderedListLocation.append(recalledProduct)
         }
+    })
+}
+
+function populateSearch(city, state){
+    fetchOngoingRecallForSearch()
+
+}
+
+
+function fetchOngoingRecallForSearch(){
+    fetch ('https://api.fda.gov/food/enforcement.json?limit=1000')
+    .then(resp => resp.json())
+    .then(data => {
+        console.log(data)
     })
 }
