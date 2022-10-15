@@ -7,15 +7,32 @@
   #recall-container {
     display: flex;
   }
+
+  input {
+    font-size: medium;
+  }
+
+  select {
+    font-size: medium;
+  }
   
   ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #loaded-product-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
+    width: 85%;
     border-radius: 5px;
     padding: 2px 25px;
   }
